@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background: url('images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: "Nunito",sans-serif;
+}
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    padding: 20px;
+    min-width: 400px;
+    background: #fafafa;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top:-5%;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 166px -31px rgba(0,0,0,0.15);
+    border-radius: 60px;
+    z-index: -1; /*To ensure its behind the box */
+
+}
+
+.box h1{
+    font-size: 40px;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.inputs{
+    background-color: #fff;
+    box-shadow: 0 0 166px -31px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.inputs label{
+    display: block;
+    font-weight: 600;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.inputs input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FF4500;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Nunito",sans-serif;
+}
+
+#calculate{
+    font-family: "Nunito",sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background: #fff;
+    width: 100%;
+    font-size: 17px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background 0.3s ease;
+}
+
+#calculate:hover{
+    background: #FF7F50;
+}
+
+.results{
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+.results p{
+    margin-bottom: 5px;
+}
+
+.bmi-res{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FF7F50;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+#span-comment{
+    color: #FF7F50;
+    font-weight: 700;
+}
